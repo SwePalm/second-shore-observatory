@@ -1,0 +1,3 @@
+holdout/*
+!holdout/README.md
+.DS_Store
