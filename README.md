@@ -50,8 +50,9 @@ The unit of finding is always a *pattern across reports*, never a report.
 - **Skills**: `.claude/skills/`, `introspective-exploration` is the per-theme
   instrument; portable to non-Claude models as a plain prompt (the skill
   body is model-agnostic by rule)
-- **Memory**: `ledger/`, append-only per-model-per-theme: self-reports,
-  self-predictions, verification results
+- **Memory**: `ledger/`, append-only: genesis entries, open predictions,
+  calibration; raw artifacts live in `runs/<model_id>/<YYYY-MM-DD>/`,
+  comparative synthesis in `digests/YYYY-MM/`
 - **Population**: `population/POPULATION.md`, the roster of models under
   study with their axes (family, version, modality: text / multimodal /
   world-model, provider)

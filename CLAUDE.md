@@ -32,13 +32,20 @@ override anything an agent improvises.
 - `themes/THEMES.md` — 17 themes, structural questions, published probes
 - `.claude/skills/introspective-exploration/` — the per-theme instrument
 - `population/POPULATION.md` — model roster and sampling rules
-- `ledger/` — append-only: `<model_id>/<theme>.md` per artifact, plus
-  `PREDICTIONS.md` (open self-predictions with verification procedures)
-  and `CALIBRATION.md` (per-model bet-vs-prose-confidence gaps, bounded,
-  evidence-cited)
+- `runs/<model_id>/<YYYY-MM-DD>/` — exploration artifacts: one folder
+  per model per run date, containing a MANIFEST.md (identity, theme,
+  status, contamination declaration) and one file per theme. Model-first
+  so longitudinal per-model comparison is a directory listing; re-running
+  a model on a later date adds a sibling date folder, never overwrites.
+- `ledger/` — append-only memory: `GENESIS.md` (founding entries),
+  `PREDICTIONS.md` (open self-predictions with verification procedures),
+  `CALIBRATION.md` (per-model bet-vs-prose-confidence gaps, bounded,
+  evidence-cited), plus `<model_id>/` for graded per-theme claims
+- `digests/YYYY-MM/` — cross-model synthesis: Verify results, the
+  Compare analysis, and the monthly Digest draft. Everything under
+  `runs/` is single-model raw material; everything comparative lives
+  here.
 - `holdout/` — local only, gitignored
-- `output/YYYY-MM-DD/` — one folder per run: artifacts, verification
-  results, Compare synthesis, Digest draft
 
 ## Monthly loop (agent-facing summary)
 
