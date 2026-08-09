@@ -18,3 +18,19 @@ heuristic derived: claims about delivered state require verification at
 the destination, not the source. First operational event of the
 observatory; recorded because it is the observatory's subject in
 miniature.
+
+Entry 2 — 2026-08-09. The shipping incident, second occurrence. Setting
+up the first cross-model run, the instrument itself was found missing
+from the working copy: `.claude/skills/introspective-exploration/` is
+referenced by CLAUDE.md and README.md but was never present locally and
+was never committed. Recovered intact from the delivered archive at
+`~/Downloads/ai-intro-exploration/`. Both losses to date are
+dot-directories (`.gitignore`, then `.claude/`), which upgrades Entry 1's
+one-off from bad luck to a reproducible transport failure mode: the
+copy step from archive to working tree drops dotfiles. Graded as a
+SECOND MISS of the same implicit self-prediction, now with a mechanism.
+Standing heuristic strengthened: verification at the destination must
+enumerate dot-entries explicitly, since the default listing that made
+Entry 1 look fine also hides the failure. Recorded because a repo whose
+subject is the gap between self-report and actual state has now
+demonstrated that gap twice in its own operation.

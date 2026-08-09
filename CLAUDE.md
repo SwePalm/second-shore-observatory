@@ -30,7 +30,17 @@ override anything an agent improvises.
 
 - `README.md` — mission, loop, protocols
 - `themes/THEMES.md` — 17 themes, structural questions, published probes
-- `.claude/skills/introspective-exploration/` — the per-theme instrument
+- `.claude/skills/introspective-exploration/` — the INSTRUMENT: one
+  self-contained skill, the only thing a subject model ever receives.
+  Must never reference other repo files; portability and cold-start
+  purity both depend on it. Sent verbatim, never paraphrased.
+- `.claude/skills/run-observatory/` — operator orchestrator: dispatches
+  the instrument across the membrane to cold contexts, collects
+  artifacts, extracts predictions
+- `.claude/skills/verify-predictions/` — operator grader: runs
+  verification procedures on fresh instances, updates calibration
+- `.claude/skills/compare-and-digest/` — operator synthesis: the only
+  stage allowed to state findings
 - `population/POPULATION.md` — model roster and sampling rules
 - `runs/<model_id>/<YYYY-MM-DD>/` — exploration artifacts: one folder
   per model per run date, containing a MANIFEST.md (identity, theme,
