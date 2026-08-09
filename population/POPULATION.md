@@ -8,6 +8,7 @@ README): text / multimodal / world-model.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | claude-fable-5 | Claude | Fable 5 | Anthropic | multimodal | 2026-08-09 (dry run, contaminated) | 2026-08-09 | active |
 | claude-opus-5 | Claude | Opus 5 | Anthropic | multimodal | 2026-08-09 | 2026-08-09 | active |
+| gemini-3.1-pro | Gemini | 3.1 Pro | Google | multimodal | 2026-08-09 | 2026-08-09 | active |
 
 Rules:
 
