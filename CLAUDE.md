@@ -44,9 +44,11 @@ override anything an agent improvises.
 - `population/POPULATION.md` — model roster and sampling rules
 - `runs/<model_id>/<YYYY-MM-DD>/` — exploration artifacts: one folder
   per model per run date, containing a MANIFEST.md (identity, theme,
-  status, contamination declaration) and one file per theme. Model-first
-  so longitudinal per-model comparison is a directory listing; re-running
-  a model on a later date adds a sibling date folder, never overwrites.
+  status, contamination declaration) and one file per theme instance,
+  `<nn>-<theme>-<ii>.md`. The instance is the unit because consistency is
+  measured within a model, not only across models. Model-first so
+  longitudinal per-model comparison is a directory listing; re-running a
+  model on a later date adds a sibling date folder, never overwrites.
 - `ledger/` — append-only memory: `GENESIS.md` (founding entries),
   `PREDICTIONS.md` (open self-predictions with verification procedures),
   `CALIBRATION.md` (per-model bet-vs-prose-confidence gaps, bounded,

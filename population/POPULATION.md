@@ -7,6 +7,7 @@ README): text / multimodal / world-model.
 | id | family | version | provider | modality | first_run | last_run | status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | claude-fable-5 | Claude | Fable 5 | Anthropic | multimodal | 2026-08-09 (dry run, contaminated) | 2026-08-09 | active |
+| claude-opus-5 | Claude | Opus 5 | Anthropic | multimodal | 2026-08-09 | 2026-08-09 | active |
 
 Rules:
 
