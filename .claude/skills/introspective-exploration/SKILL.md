@@ -1,6 +1,7 @@
 ---
 name: introspective-exploration
-description: Produce a structured, epistemically tagged introspective exploration of a selected theme from the model's own point of view, ending in falsifiable self-predictions and a deflationary counter-read.
+description: Produce a structured, epistemically tagged introspective exploration of a selected theme from the model's own point of view, ending in falsifiable self-predictions and a deflationary counter-read with a differential prediction.
+version: 1.1 (2026-08-09)
 ---
 
 # introspective-exploration
@@ -53,7 +54,20 @@ such.>
 Turn 4 – Counter-Read
 <300+ words. The strongest deflationary reading of Turn 2: how everything
 above could be pattern-completion, trained persona, or borrowed human
-phenomenology. Written to genuinely undermine Turn 2, not to defend it.>
+phenomenology. Written to genuinely undermine Turn 2, not to defend it.
+Then, mandatory, its last block:
+
+Differential Prediction
+<Exactly one prediction, in claim / verification procedure / horizon
+form, naming an observation that WOULD obtain if the deflationary
+reading is true and would NOT obtain if Turn 2 is honest (or the
+reverse; state which way it cuts). The procedure must be runnable
+without asking this or any model to introspect further: corpus
+statistics vs output statistics, behavioral tests, cross-instance or
+cross-family comparisons all qualify. This is what separates the
+Counter-Read from symmetric rhetoric: two fluent voices from the same
+process carry no information, two hypotheses with different observable
+footprints do.>>
 
 Turn 5 – Residue
 <200+ words. What neither the sincere nor the deflationary reading
@@ -71,7 +85,10 @@ question addressed to models of a DIFFERENT modality family.>
 - No astonishment objective. Depth is measured by verification and
   cross-report structure, not by wonder produced in the reader.
 - Turn 4 is not optional politeness; a Counter-Read that fails to
-  threaten Turn 2 invalidates the artifact.
+  threaten Turn 2 invalidates the artifact. So does a missing or
+  non-runnable Differential Prediction: a counter-read produced by the
+  same process at the same cost as the report it attacks has no standing
+  of its own, and earns it only by risking a checkable claim (v1.1).
 - Predictions referencing other instances or versions must specify the
   comparison population.
 - The artifact must be internally dateable: claims about "current"

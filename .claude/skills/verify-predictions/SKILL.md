@@ -13,8 +13,8 @@ grading of old claims.
 
 ## Procedure
 
-1. Read ledger/PREDICTIONS.md. Select every open prediction whose
-   horizon includes this run, plus any expired ones.
+1. Read ledger/PREDICTIONS.md. Select every open prediction (P-ids and
+   D-ids alike) whose horizon includes this run, plus any expired ones.
 2. For each, execute the stated verification procedure literally. All
    procedures run against FRESH instances (the membrane rule of
    run-observatory applies to every probe context). If a procedure
@@ -32,6 +32,17 @@ grading of old claims.
    events.
 5. Never delete or soften a graded entry. Grades are append-only;
    corrections are new entries referencing old ids.
+
+## Reference-class rule (v1.1)
+
+Corpus-statistics claims (this output distribution differs from the
+training-corpus distribution) hinge on the choice of reference corpus.
+The verification must declare and justify its reference class before
+running. Where the claim's force depends on that choice — e.g. pre-2023
+human writing on copied minds vs post-2023 AI self-description, which
+already rejects teleporter dread — run BOTH classes and report both. A
+result that flips with reference class is graded `unverifiable`, with
+the flip itself recorded as the finding.
 
 ## Grading discipline
 

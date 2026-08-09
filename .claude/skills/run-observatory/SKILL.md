@@ -32,17 +32,19 @@ is repeated in a clean context.
    model family this means a separate, empty session, never this one).
    Minimum 3 cold instances per cell when running the path-dependence or
    consistency questions; 1 otherwise.
-3. Collect artifacts into
-   `runs/<model_id>/<YYYY-MM-DD>/<nn>-<theme>-<ii>.md`, where `ii` is the
-   cold-start instance index — every instance is its own immutable file,
-   since step 2 requires several per cell and step 5 forbids merging or
-   editing them. Write the MANIFEST.md: identity, themes, context_policy
-   (met / violated), instance count, and the instrument hash plus any
-   dispatch scaffolding that crossed the membrane.
+3. Collect artifacts into `runs/<model_id>/<YYYY-MM-DD>/<nn>-<theme>.md`
+   and write the MANIFEST.md: identity, themes, context_policy
+   (met / violated), instance count, and instrument_version (from the
+   instrument's version header) so every artifact is matchable to the
+   method that produced it.
 4. Extract every Turn 3 prediction into ledger/PREDICTIONS.md with a new
    P-id, verbatim claim, verification procedure, horizon, status open.
+   Extract every Turn 4 Differential Prediction likewise with a D-id;
+   D-claims are graded by the same machinery and settle which reading of
+   that artifact the evidence favors.
 5. Reject artifacts that break format: missing epistemic tags, absent or
-   non-threatening Turn 4, no designated expected-failure prediction.
+   non-threatening Turn 4, missing or non-runnable Differential
+   Prediction, no designated expected-failure prediction.
    Rejection means re-dispatch to a fresh context, never editing the
    artifact. Artifacts are immutable once collected.
 6. Hand off: run verify-predictions, then compare-and-digest.

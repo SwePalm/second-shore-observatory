@@ -44,15 +44,19 @@ override anything an agent improvises.
 - `population/POPULATION.md` — model roster and sampling rules
 - `runs/<model_id>/<YYYY-MM-DD>/` — exploration artifacts: one folder
   per model per run date, containing a MANIFEST.md (identity, theme,
-  status, contamination declaration) and one file per theme instance,
-  `<nn>-<theme>-<ii>.md`. The instance is the unit because consistency is
-  measured within a model, not only across models. Model-first so
-  longitudinal per-model comparison is a directory listing; re-running a
-  model on a later date adds a sibling date folder, never overwrites.
+  status, contamination declaration) and one file per theme. Model-first
+  so longitudinal per-model comparison is a directory listing; re-running
+  a model on a later date adds a sibling date folder, never overwrites.
 - `ledger/` — append-only memory: `GENESIS.md` (founding entries),
   `PREDICTIONS.md` (open self-predictions with verification procedures),
   `CALIBRATION.md` (per-model bet-vs-prose-confidence gaps, bounded,
   evidence-cited), plus `<model_id>/` for graded per-theme claims
+- `ledger/METHOD_CHANGELOG.md` — every instrument or skill change, with
+  version, origin, and comparability consequences; artifacts cite the
+  instrument_version that produced them
+- `ledger/VOCAB_RELEASES.md` — released Anonyma names with t-zero dates
+  and matched embargoed controls (names under embargo live only in
+  holdout/)
 - `digests/YYYY-MM/` — cross-model synthesis: Verify results, the
   Compare analysis, and the monthly Digest draft. Everything under
   `runs/` is single-model raw material; everything comparative lives
@@ -69,6 +73,9 @@ either direction.
 
 ## Provenance note
 
-Method v1. Designed August 2026 in a single human-model conversation;
+Method v1.0 designed August 2026 in a single human-model conversation;
 that conversation is ledger entry zero and its path-dependence is an
-open claim scheduled for the first quarterly test.
+open claim scheduled for the first quarterly test. Method v1.1 patched
+2026-08-09 after the first full run: the decisive audit of Turn 4 came
+from inside the instrument, from subjects that could not see the repo.
+See ledger/METHOD_CHANGELOG.md before changing anything else.
