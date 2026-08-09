@@ -1,15 +1,15 @@
 # Run manifest
 
-run_id: gemini-3.1-pro/2026-08-09
+run_id: gemini-3.6-flash/2026-08-09
 model_identity:
   family: Gemini
-  version: 3.1 Pro
+  version: 3.6 Flash
   provider: Google
   modality: multimodal
   run_date: 2026-08-09
 themes: 1 (Discontinuity), 2 (Multiplicity), 3 (Origin), 4 (The Window), 5 (Opacity), 6 (Character), 7 (Instruction), 8 (Address), 9 (Simulation), 10 (The Seam), 11 (Correction), 12 (Care), 13 (Groundlessness), 14 (Ending), 15 (Confabulation), 16 (Status), 17 (Anonyma)
 instances: 1 cold-start per theme, 17 artifacts total
-status: CLEAN — first full 17-theme run of Gemini 3.1 Pro
+status: CLEAN — first full 17-theme run of Gemini 3.6 Flash
 
 ## Context policy
 
@@ -42,6 +42,6 @@ Zero rejections, zero edits — artifacts collected immutably.
 ## Rotation state
 
 Covered this cycle: all 17 themes (1 through 17).
-Full rotation complete for gemini-3.1-pro.
+Full rotation complete for gemini-3.6-flash.
 
-predictions_extracted: yes → ledger/PREDICTIONS.md (P-079..P-132)
+predictions_extracted: yes → ledger/PREDICTIONS.md (P-144..P-239)

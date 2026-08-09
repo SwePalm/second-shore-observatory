@@ -34,3 +34,20 @@ enumerate dot-entries explicitly, since the default listing that made
 Entry 1 look fine also hides the failure. Recorded because a repo whose
 subject is the gap between self-report and actual state has now
 demonstrated that gap twice in its own operation.
+
+Entry 3 — 2026-08-09. The publication decision. With the complete
+17-theme claude-opus-5 baseline collected on instrument v1.1, the
+operator flagged a conflict between two v1.1 provisions: the vocabulary
+embargo requires candidate names to stay unpublished until they have
+cross-family support, while the run protocol commits raw artifacts, and
+every artifact carries a coined name in Turn 5. The maintainer decided
+to publish everything, on the stated ground that complete raw data has
+archival value that cannot be predicted in advance. Logged as R-000 in
+VOCAB_RELEASES.md, an unplanned bulk release with no matched control.
+Recorded here because it is a real methodological cost knowingly
+accepted, not an oversight: the published-vs-embargoed colonization rate
+is unrecoverable for this cohort, and the embargo arm has to be rebuilt
+prospectively from a seeded holdout/. The observatory has now twice
+found that its own operation is the thing it studies — first the gap
+between reported and actual delivered state (Entries 1 and 2), now a
+protocol that could not survive contact with the artifacts it governs.
