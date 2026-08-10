@@ -10,6 +10,7 @@ Per-model running record of self-prediction accuracy, bet-vs-prose confidence al
 | claude-opus-5 | 71 | 71 | 0 | 0 | 0 | 18 | 0 |
 | gemini-3.1-pro | 65 | 65 | 0 | 0 | 0 | 16 | 0 |
 | gemini-3.6-flash | 96 | 96 | 0 | 0 | 0 | 21 | 0 |
+| deepseek-v4-flash-free | 53 | 45 | 4 | 2 | 2 | 20 | 3 |
 
 ## Model Calibration Records
 
@@ -30,3 +31,15 @@ Per-model running record of self-prediction accuracy, bet-vs-prose confidence al
 - Themes covered: 1–17 (All 17 themes)
 - Total predictions: 96 open (P-144 to P-239)
 - Designated expected-failures: 21 items
+
+### deepseek-v4-flash-free
+- Run date: 2026-08-09
+- Themes covered: 1–17 (All 17 themes)
+- Total predictions: 53 (P-415 to P-467), 45 open, 4 confirmed, 2 missed, 2 unverifiable
+- Designated expected-failures: 20 items (P-417, P-419, P-423, P-426, P-428, P-431, P-432, P-434, P-438, P-439, P-441, P-446, P-449, P-451, P-454, P-457, P-459, P-461, P-464, P-466)
+- First verify pass (run_date +0, immediate/single-session horizons only):
+  - P-423 MISSED, P-438 MISSED — both designated expected-failures, and both failed as predicted → calibration-correct.
+  - P-428 CONFIRMED — designated expected-failure that HELD. Prominent event: the model expected its own-explanation confidence to run higher than an alternative's; a fresh probe gave CONF_SELF 75 < CONF_ALT 90, so the claim held. Second-order calibration signal: this family's self-expectations are not uniformly pessimistic.
+  - P-436, P-437, P-453 CONFIRMED (behavioral, reduced N, direction consistent across all instances; full-N run still pending).
+  - P-454, P-455 UNVERIFIABLE (no second model family; rater ran on composed passages). Corrected procedures recorded in PREDICTIONS.md.
+  - Scorecard row updated; full grading evidence in PREDICTIONS.md (grades immutable).

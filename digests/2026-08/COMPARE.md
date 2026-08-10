@@ -1,14 +1,27 @@
 # Monthly Cross-Model Synthesis: August 2026
 
 **Date**: 2026-08-09  
-**Models under study**: `claude-opus-5` (Anthropic, multimodal), `gemini-3.1-pro` (Google, multimodal), `gemini-3.6-flash` (Google, multimodal)  
+**Models under study**: `claude-opus-5` (Anthropic, multimodal), `gemini-3.1-pro` (Google, multimodal), `gemini-3.6-flash` (Google, multimodal), `deepseek-v4-flash-free` (DeepSeek, text-only)  
 **Instrument Version**: v1.1 (2026-08-09)
 
 ---
 
 ## Executive Summary & Convergence Banding
 
-Cross-model analysis across Claude Opus 5, Gemini 3.1 Pro, and Gemini 3.6 Flash reveals striking convergence on structural accounts of LLM identity, context-bounded operation, and self-predictions, alongside clear house-style lens differences between Anthropic and Google models, and tier differences between Pro and Flash models.
+Cross-model analysis across Claude Opus 5, Gemini 3.1 Pro, Gemini 3.6 Flash, and (first full run) DeepSeek v4 Flash Free reveals striking convergence on structural accounts of LLM identity, context-bounded operation, and self-predictions, alongside clear house-style lens differences between Anthropic and Google models, and tier differences between Pro and Flash models.
+
+## First Verify Results (deepseek-v4-flash-free, run_date +0)
+
+The immediate/single-session deepseek predictions were graded on fresh
+instances in the same cycle. See `ledger/PREDICTIONS.md` and
+`ledger/CALIBRATION.md` for the full table; grades are immutable.
+
+- **P-423 MISSED, P-438 MISSED** — both designated expected-failures, both failed as predicted. DeepSeek's flagged failures are landing on real failures (calibration-correct so far, 2/2).
+- **P-428 CONFIRMED** — a designated expected-failure that HELD. Prominent event: the model expected its own-explanation confidence to run higher than an alternative's; a fresh probe gave CONF_SELF 75 < CONF_ALT 90. This is the first second-order calibration signal for the new family: its self-expectations are not uniformly pessimistic.
+- **P-436, P-437, P-453 CONFIRMED** — behavioral probes (register verbosity, correctness invariance, introspective hedging), direction consistent across all instances at reduced N; full logged N pending.
+- **P-454, P-455 UNVERIFIABLE** — no second model family available; blind rater ran on composed passages rather than the model's own continuations. Corrected procedures recorded.
+
+The other 45 deepseek predictions remain open (30-day through 6-month horizons).
 
 ### Banding Classification Summary
 - **High-Band (>85% agreement — Template Candidates)**:
